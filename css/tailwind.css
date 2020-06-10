@@ -1,0 +1,124 @@
+/* Agrega el codigo base de tailwind */
+
+@tailwind base;
+@tailwind components;
+.alert {
+    @apply w-auto;
+    @apply h-auto;
+    @apply m-4;
+    @apply p-2;
+    @apply text-center;
+}
+
+.alert-default {
+    @apply border-t-4;
+    @apply border-gray-500;
+    @apply bg-gray-300;
+    @apply text-gray-800;
+}
+
+.alert-danger {
+    @apply border-t-4;
+    @apply border-red-500;
+    @apply bg-red-300;
+    @apply text-red-800;
+}
+
+.alert-warning {
+    @apply border-t-4;
+    @apply border-yellow-500;
+    @apply bg-yellow-300;
+    @apply text-yellow-800;
+}
+
+.alert-info {
+    @apply border-t-4;
+    @apply border-blue-500;
+    @apply bg-blue-300;
+    @apply text-blue-800;
+}
+
+.alert-success {
+    @apply border-t-4;
+    @apply border-teal-500;
+    @apply bg-teal-300;
+    @apply text-teal-800;
+}
+
+h1 {
+    @apply text-3xl;
+    @apply text-green-700;
+    @apply font-semibold;
+}
+
+h2 {
+    @apply text-3xl;
+    @apply text-green-700;
+    @apply font-semibold;
+}
+
+h3 {
+    @apply text-4xl;
+    @apply text-green-300;
+    @apply font-semibold;
+}
+
+.form-control {
+    @apply w-full;
+    @apply leading-snug;
+    @apply bg-gray-200;
+    @apply p-2;
+    @apply rounded-lg
+}
+
+.form-control:hover {
+    @apply bg-white
+}
+
+.form-control:focus {
+    @apply outline-none shadow-xs
+}
+
+.btn {
+    @apply inline-block p-2 px-8  rounded-lg;
+}
+
+.btn:focus {
+    @apply outline-none shadow-outline;
+}
+
+.btn-primary {
+    @apply bg-blue-900 text-white;
+}
+
+.btn-primary:hover {
+    @apply shadow-lg bg-blue-901;
+}
+
+.btn-primary:active {
+    @apply bg-blue-901;
+}
+.btn-secondary {
+    @apply bg-green-900 text-white;
+}
+
+.btn-secondary:hover {
+    @apply bg-green-901;
+}
+
+@tailwind utilities;
+@responsive {
+    .rotate-45 {
+        transform: rotate(90deg);
+    }
+}
+
+.rotate-45 {
+    transform: rotate(45deg);
+}
+
+@variants hover {
+    .zoom {
+        transform: scale(2);
+    }
+}
